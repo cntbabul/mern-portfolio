@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 //static file access
-app.use(express.static(path.join(__dir, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 //routes
 app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
